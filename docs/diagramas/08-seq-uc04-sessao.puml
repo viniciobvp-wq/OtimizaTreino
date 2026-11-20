@@ -1,0 +1,36 @@
+@startuml
+!include _seq.iuml
+title UC04 - Registrar Sessão de Treino
+P -> F : Clica "Registrar sessão" e escolhe o treino
+F -> A : GET /api/treinos/:id
+A -> R : buscarPorId(id)
+R -> DB : SELECT treino e itens
+A --> F : 200 treino com itens
+F --> P : Gera linhas de séries com reps/carga prescritas
+P -> F : Ajusta repetições, carga e RPE realizados
+P -> F : Salvar
+F -> A : POST /api/sessoes {treino_id, data, rpe_sessao, series[]}
+A -> R : SessaoRepositorio.criar(dados)
+R -> M : new Sessao(dados).validar()
+note right of M : data não futura, RPE 1-10,\nao menos uma série
+alt inválido
+  A --> F : 400 {detalhes}
+  F --> P : Mostra erros
+else válido
+  R -> DB : BEGIN
+  R -> DB : SELECT treino (existe?)
+  R -> DB : INSERT sessao
+  loop cada série
+    R -> DB : INSERT serie_realizada
+  end
+  R -> DB : COMMIT
+  A --> F : 201 sessão
+  F --> P : "Sessão registrada" e atualiza histórico
+end
+== Editar / excluir ==
+P -> F : Editar ou Excluir sessão
+F -> A : PUT /api/sessoes/:id  |  DELETE /api/sessoes/:id
+A -> R : atualizar() | remover()
+R -> DB : UPDATE + regrava séries  |  DELETE (CASCADE séries)
+A --> F : 200 | 204
+@enduml

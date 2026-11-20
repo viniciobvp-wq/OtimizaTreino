@@ -1,0 +1,43 @@
+@startuml
+!include _estilo.iuml
+title Registrar sessão e otimizar o treino
+|Praticante|
+start
+:Selecionar praticante ativo;
+:Abrir "Registrar sessão";
+:Escolher o treino (ficha);
+|Sistema|
+:Buscar prescrição do treino;
+:Gerar linhas de séries\ncom reps e carga prescritas;
+|Praticante|
+repeat
+  :Informar repetições, carga\ne RPE de cada série;
+  :Salvar sessão;
+  |Sistema|
+  :Validar dados;
+repeat while (Dados válidos?) is (não) not (sim)
+:Gravar sessão e séries\n(transação no MySQL);
+|Praticante|
+:Abrir painel de Otimização;
+|Sistema|
+fork
+  :Calcular sugestão de carga\n(regras de RPE e repetições);
+fork again
+  :Calcular volume semanal\npor grupo muscular;
+fork again
+  :Estimar 1RM (Epley)\ne verificar fadiga;
+end fork
+:Exibir sugestões e alertas;
+|Praticante|
+if (Aceita os ajustes?) then (sim)
+  :Clicar "Aplicar ajustes na ficha";
+  |Sistema|
+  :Atualizar carga_kg dos itens\ndo treino (transação);
+  :Recalcular e exibir painel;
+else (não)
+  |Praticante|
+  :Manter ficha atual;
+endif
+|Praticante|
+stop
+@enduml

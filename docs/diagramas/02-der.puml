@@ -1,0 +1,70 @@
+@startuml
+!include _estilo.iuml
+hide circle
+skinparam linetype ortho
+entity "usuario" as usuario {
+  * id : INT <<PK>>
+  --
+  * nome : VARCHAR(100)
+  * email : VARCHAR(150) <<UNIQUE>>
+  data_nascimento : DATE
+  peso_kg : DECIMAL(5,2)
+  altura_cm : DECIMAL(5,2)
+  * objetivo : ENUM
+  * nivel : ENUM
+  * criado_em : TIMESTAMP
+}
+entity "exercicio" as exercicio {
+  * id : INT <<PK>>
+  --
+  * nome : VARCHAR(100) <<UNIQUE>>
+  * grupo_muscular : ENUM
+  equipamento : VARCHAR(60)
+  descricao : TEXT
+}
+entity "treino" as treino {
+  * id : INT <<PK>>
+  --
+  * usuario_id : INT <<FK>>
+  * nome : VARCHAR(80)
+  dia_semana : VARCHAR(20)
+  observacoes : TEXT
+  * criado_em : TIMESTAMP
+}
+entity "treino_exercicio" as te {
+  * id : INT <<PK>>
+  --
+  * treino_id : INT <<FK>>
+  * exercicio_id : INT <<FK>>
+  * ordem : TINYINT
+  * series : TINYINT
+  * repeticoes_alvo : TINYINT
+  * carga_kg : DECIMAL(6,2)
+  * descanso_seg : SMALLINT
+}
+entity "sessao" as sessao {
+  * id : INT <<PK>>
+  --
+  * treino_id : INT <<FK>>
+  * data : DATE
+  duracao_min : SMALLINT
+  rpe_sessao : DECIMAL(3,1)
+  observacoes : TEXT
+}
+entity "serie_realizada" as sr {
+  * id : INT <<PK>>
+  --
+  * sessao_id : INT <<FK>>
+  * exercicio_id : INT <<FK>>
+  * numero_serie : TINYINT
+  * repeticoes : TINYINT
+  * carga_kg : DECIMAL(6,2)
+  rpe : DECIMAL(3,1)
+}
+usuario ||--o{ treino : possui
+treino ||--|{ te : prescreve
+exercicio ||--o{ te : compõe
+treino ||--o{ sessao : executado em
+sessao ||--|{ sr : registra
+exercicio ||--o{ sr : refere-se
+@enduml

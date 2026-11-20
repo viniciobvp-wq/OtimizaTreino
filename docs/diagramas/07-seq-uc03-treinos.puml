@@ -1,0 +1,43 @@
+@startuml
+!include _seq.iuml
+title UC03 - Gerenciar Treinos
+P -> F : Seleciona praticante e abre "Treinos"
+F -> A : GET /api/treinos?usuario_id=1
+A -> R : TreinoRepositorio.listar()
+R -> DB : SELECT treino + contagem de itens
+DB --> R : linhas
+A --> F : 200 [treinos]
+loop para cada treino
+  F -> A : GET /api/treinos/:id
+  A -> R : buscarPorId(id)
+  R -> DB : SELECT treino; SELECT itens JOIN exercicio
+  A --> F : 200 treino com itens
+end
+F --> P : Exibe fichas
+== Criar / editar ficha ==
+P -> F : Informa nome, dia e adiciona exercícios\n(séries, reps, carga, descanso)
+F -> A : POST /api/treinos (ou PUT /:id) {itens[]}
+A -> R : criar(dados) / atualizar(id, dados)
+R -> M : new Treino(dados).validar()
+note right of M : valida cada TreinoExercicio\ne impede exercício repetido
+alt inválido
+  A --> F : 400 {detalhes}
+  F --> P : Mostra erros
+else válido
+  R -> DB : BEGIN
+  R -> DB : INSERT/UPDATE treino
+  R -> DB : DELETE itens antigos
+  loop cada item
+    R -> DB : INSERT treino_exercicio
+  end
+  R -> DB : COMMIT
+  A --> F : 201 / 200 treino
+  F --> P : Exibe ficha atualizada
+end
+== Excluir ==
+P -> F : Excluir ficha (confirma)
+F -> A : DELETE /api/treinos/:id
+A -> R : remover(id)
+R -> DB : DELETE FROM treino (CASCADE itens e sessões)
+A --> F : 204
+@enduml

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1050px" preserveAspectRatio="none" style="width:874px;height:1050px;" version="1.1" viewBox="0 0 874 1050" width="874px" zoomAndPan="magnify"><defs/><g><!--MD5=[35a64b983c79880384a2fd9b61f0c24b]
+class Usuario--><rect fill="#FFFFFF" height="207.5938" id="Usuario" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="171" x="546.5" y="8"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="607.5" y="25.0669">Usuario</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="547.5" x2="716.5" y1="33.1328" y2="33.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="552.5" y="49.1997">-id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="552.5" y="64.3325">-nome : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="552.5" y="79.4653">-email : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="552.5" y="94.5981">-data_nascimento : Date</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="552.5" y="109.731">-peso_kg : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="552.5" y="124.8638">-altura_cm : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="119" x="552.5" y="139.9966">-objetivo : Objetivo</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="552.5" y="155.1294">-nivel : Nivel</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="547.5" x2="716.5" y1="162.1953" y2="162.1953"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="552.5" y="178.2622">+validar() : Usuario</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="155" x="552.5" y="193.395">+calcularIMC() : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="552.5" y="208.5278">+paraLinha() : object</text><!--MD5=[87086cf1d084b9505b6a3af38dd39d90]
+class Exercicio--><rect fill="#FFFFFF" height="147.0625" id="Exercicio" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="228" x="387" y="577.5"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="56" x="473" y="594.5669">Exercicio</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="388" x2="614" y1="602.6328" y2="602.6328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="393" y="618.6997">-id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="393" y="633.8325">-nome : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="393" y="648.9653">-grupo_muscular : GrupoMuscular</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="393" y="664.0981">-equipamento : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="393" y="679.231">-descricao : string</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="388" x2="614" y1="686.2969" y2="686.2969"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="393" y="702.3638">+validar() : Exercicio</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="393" y="717.4966">+paraLinha() : object</text><!--MD5=[240ba6d014561a6b1ba88a89d7e8b425]
+class Treino--><rect fill="#FFFFFF" height="177.3281" id="Treino" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="204" x="336" y="293"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="39" x="418.5" y="310.0669">Treino</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="337" x2="539" y1="318.1328" y2="318.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="342" y="334.1997">-id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="98" x="342" y="349.3325">-usuario_id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="342" y="364.4653">-nome : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="342" y="379.5981">-dia_semana : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="134" x="342" y="394.731">-observacoes : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="342" y="409.8638">-itens : TreinoExercicio[]</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="337" x2="539" y1="416.9297" y2="416.9297"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="342" y="432.9966">+validar() : Treino</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="192" x="342" y="448.1294">+volumePlanejado() : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="342" y="463.2622">+paraLinha() : object</text><!--MD5=[44f1ea07421b151773da542a627ccf0a]
+class TreinoExercicio--><rect fill="#FFFFFF" height="207.5938" id="TreinoExercicio" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="268" x="6" y="547"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="95" x="92.5" y="564.0669">TreinoExercicio</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="7" x2="273" y1="572.1328" y2="572.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="12" y="588.1997">-id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="12" y="603.3325">-treino_id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="12" y="618.4653">-exercicio_id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="75" x="12" y="633.5981">-ordem : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="12" y="648.731">-series : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="133" x="12" y="663.8638">-repeticoes_alvo : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="12" y="678.9966">-carga_kg : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="12" y="694.1294">-descanso_seg : int</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="7" x2="273" y1="701.1953" y2="701.1953"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="256" x="12" y="717.2622">+validarEm(v : Validador, rotulo : string)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="192" x="12" y="732.395">+volumePlanejado() : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="211" x="12" y="747.5278">+paraLinha(treinoId : int) : object</text><!--MD5=[17467ebbeb1d3aae84ae2d687f112f57]
+class Sessao--><rect fill="#FFFFFF" height="192.4609" id="Sessao" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="173" x="650.5" y="555"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="47" x="713.5" y="572.0669">Sessao</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="651.5" x2="822.5" y1="580.1328" y2="580.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="656.5" y="596.1997">-id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="656.5" y="611.3325">-treino_id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="656.5" y="626.4653">-data : Date</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="116" x="656.5" y="641.5981">-duracao_min : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="140" x="656.5" y="656.731">-rpe_sessao : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="134" x="656.5" y="671.8638">-observacoes : string</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="656.5" y="686.9966">-series : SerieRealizada[]</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="651.5" x2="822.5" y1="694.0625" y2="694.0625"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="656.5" y="710.1294">+validar() : Sessao</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="161" x="656.5" y="725.2622">+volumeTotal() : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="656.5" y="740.395">+paraLinha() : object</text><!--MD5=[0967a33c1c7b87a112e9c6290f43de3b]
+class SerieRealizada--><rect fill="#FFFFFF" height="207.5938" id="SerieRealizada" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="268" x="595" y="832"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="94" x="682" y="849.0669">SerieRealizada</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="596" x2="862" y1="857.1328" y2="857.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="601" y="873.1997">-id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="601" y="888.3325">-sessao_id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="601" y="903.4653">-exercicio_id : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="601" y="918.5981">-numero_serie : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="601" y="933.731">-repeticoes : int</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="601" y="948.8638">-carga_kg : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="601" y="963.9966">-rpe : number</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="596" x2="862" y1="971.0625" y2="971.0625"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="256" x="601" y="987.1294">+validarEm(v : Validador, rotulo : string)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="601" y="1002.2622">+estimar1RM() : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="601" y="1017.395">+volume() : number</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="189" x="601" y="1032.5278">+epley(carga, reps) : number</text><!--MD5=[6fa8d92e41e8fcfab0f3791a7c2bd7d7]
+class Objetivo--><rect fill="#FFFFFF" height="93.6641" id="Objetivo" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="114" x="575" y="334.5"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="606" y="351.5669">Objetivo</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="576" x2="688" y1="359.6328" y2="359.6328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65" x="581" y="375.6997">hipertrofia</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32" x="581" y="390.8325">forca</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69" x="581" y="405.9653">resistencia</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="102" x="581" y="421.0981">emagrecimento</text><!--MD5=[c3d7bd05d531ee48fee1083093bdc25d]
+class GrupoMuscular--><rect fill="#FFFFFF" height="184.4609" id="GrupoMuscular" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="102" x="450" y="844"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="453" y="861.0669">GrupoMuscular</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="451" x2="551" y1="869.1328" y2="869.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32" x="456" y="885.1997">peito</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="456" y="900.3325">costas</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="456" y="915.4653">ombros</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="41" x="456" y="930.5981">biceps</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="43" x="456" y="945.731">triceps</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="456" y="960.8638">quadriceps</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="57" x="456" y="975.9966">posterior</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="47" x="456" y="991.1294">gluteos</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69" x="456" y="1006.2622">panturrilha</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="456" y="1021.395">abdomen</text><!--MD5=[d544e1720d36c287a1d38909fe06b56d]
+class Nivel--><rect fill="#FFFFFF" height="78.5313" id="Nivel" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="97" x="724.5" y="342"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="31" x="757.5" y="359.0669">Nivel</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="725.5" x2="820.5" y1="367.1328" y2="367.1328"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="53" x="730.5" y="383.1997">iniciante</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="730.5" y="398.3325">intermediario</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="62" x="730.5" y="413.4653">avancado</text><!--MD5=[de4c9ea5e16d5c7f06f66e60e01d1552]
+reverse link Usuario to Treino--><path d="M549.47,226.8 C533.47,248.86 516.93,271.67 501.65,292.74 " fill="none" id="Usuario&lt;-Treino" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#344054" points="557.27,216.04,550.5089,218.5474,550.2229,225.7528,556.9841,223.2454,557.27,216.04" style="stroke: #344054; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="41" x="536" y="259.0669">possui</text><polygon fill="#000000" points="552,268.1328,555,274.1328,558,268.1328,552,268.1328" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="543.9803" y="235.6191">1</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="482.9687" y="281.8273">0..*</text><!--MD5=[30177d39d31749464987206e43c02e1b]
+reverse link Treino to TreinoExercicio--><path d="M330.71,478.8 C306.1,500.9 279.83,524.48 254.9,546.86 " fill="none" id="Treino&lt;-TreinoExercicio" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#344054" points="340.42,470.09,333.2833,471.123,331.492,478.1081,338.6287,477.0751,340.42,470.09" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#000000" points="315,507.0664,309,510.0664,315,513.0664,315,507.0664" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="31" x="321" y="513.0669">itens</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="323.6905" y="490.4062">1</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="239.1703" y="536.0962">1..*</text><!--MD5=[1bcdf3ef291d1fdbc05b088948e46c3e]
+link TreinoExercicio to Exercicio--><path d="M274.17,651 C309.44,651 347.24,651 381.67,651 " fill="none" id="TreinoExercicio-&gt;Exercicio" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#344054" points="386.72,651,377.72,647,381.72,651,377.72,655,386.72,651" style="stroke: #344054; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="292.5" y="644.0669">prescreve</text><polygon fill="#000000" points="358.5,638.0664,364.5,641.0664,358.5,644.0664,358.5,638.0664" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="282.1363" y="663.4918">0..*</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="371.1427" y="647.5887">1</text><!--MD5=[985e9fb3aad50bd01ea749e896cc540f]
+reverse link Treino to Sessao--><path d="M550.08,474.42 C577.57,497.68 606.65,522.91 633,547 C638.72,552.23 644.55,557.68 650.39,563.21 " fill="none" id="Treino&lt;-Sessao" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#344054" points="540.03,465.95,542.0377,472.876,549.2031,473.6865,547.1954,466.7606,540.03,465.95" style="stroke: #344054; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="92" x="597" y="513.0669">executado em</text><polygon fill="#000000" points="692,507.0664,698,510.0664,692,513.0664,692,507.0664" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="548.1479" y="468.9009">1</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="619.5719" y="552.6704">0..*</text><!--MD5=[36c68ba501ac40d87f824cf5672f8c5f]
+reverse link Sessao to SerieRealizada--><path d="M733.94,760.32 C733.27,783.84 732.57,808.66 731.91,831.97 " fill="none" id="Sessao&lt;-SerieRealizada" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#344054" points="734.31,747.02,730.1401,752.9032,733.9669,759.0151,738.1368,753.1319,734.31,747.02" style="stroke: #344054; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="734" y="798.0669">series</text><polygon fill="#000000" points="748.5,807.1328,751.5,813.1328,754.5,807.1328,748.5,807.1328" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="725.756" y="767.6461">1</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="708.2792" y="820.8662">1..*</text><!--MD5=[5b38828098abc4f8cface25bd067e532]
+reverse link Exercicio to SerieRealizada--><path d="M562.84,728.76 C588.45,760.54 618.53,797.88 646.01,831.99 " fill="none" id="Exercicio&lt;-SerieRealizada" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#344054" points="559.42,724.51,561.9315,734.0332,562.5487,728.4102,568.1718,729.0273,559.42,724.51" style="stroke: #344054; stroke-width: 1.0;"/><polygon fill="#000000" points="646.5,796,649.5,790,652.5,796,646.5,796" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="622" y="811.0669">refere-se</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="556.777" y="744.5548">1</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="616.0709" y="820.8877">0..*</text><!--MD5=[26d0c4e31ac7626ee1fc33f92c03d913]
+link Usuario to Objetivo--><path d="M632,216.04 C632,254.88 632,297.37 632,329.43 " fill="none" id="Usuario-&gt;Objetivo" style="stroke: #344054; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#344054" points="632,334.48,636,325.48,632,329.48,628,325.48,632,334.48" style="stroke: #344054; stroke-width: 1.0;"/><!--MD5=[1f80387edaddfe9cb152445559617700]
+link Usuario to Nivel--><path d="M686.31,216.04 C708.5,258.12 732.94,304.5 750.2,337.24 " fill="none" id="Usuario-&gt;Nivel" style="stroke: #344054; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#344054" points="752.69,341.97,752.0419,332.1425,750.363,337.5445,744.961,335.8656,752.69,341.97" style="stroke: #344054; stroke-width: 1.0;"/><!--MD5=[6d00cd3bd63fb734328997ec8aef38aa]
+link Exercicio to GrupoMuscular--><path d="M501,724.51 C501,759.31 501,801.47 501,838.89 " fill="none" id="Exercicio-&gt;GrupoMuscular" style="stroke: #344054; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#344054" points="501,843.9,505,834.9,501,838.9,497,834.9,501,843.9" style="stroke: #344054; stroke-width: 1.0;"/><!--MD5=[3b0c8d97c4d0bf3d1d1ec4301a50cd92]
+@startuml
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam roundCorner 8
+skinparam ArrowColor #344054
+skinparam BorderColor #344054
+skinparam ActorBorderColor #344054
+skinparam ActorBackgroundColor #FFF4EC
+skinparam UsecaseBackgroundColor #FFF4EC
+skinparam UsecaseBorderColor #CF561D
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassHeaderBackgroundColor #FFE7D9
+skinparam ClassBorderColor #CF561D
+skinparam EntityBackgroundColor #FFFFFF
+skinparam ActivityBackgroundColor #FFF4EC
+skinparam ActivityBorderColor #CF561D
+skinparam ActivityDiamondBackgroundColor #FFFFFF
+skinparam ParticipantBackgroundColor #FFF4EC
+skinparam ParticipantBorderColor #CF561D
+skinparam DatabaseBackgroundColor #E8F0FB
+skinparam SequenceLifeLineBorderColor #98A2B3
+skinparam SequenceGroupBackgroundColor #F2F4F7
+skinparam NoteBackgroundColor #FEF9C3
+skinparam NoteBorderColor #CA8A04
+skinparam PackageBorderColor #98A2B3
+skinparam RectangleBorderColor #98A2B3
+skinparam classAttributeIconSize 0
+hide circle
+class Usuario {
+  - id : int
+  - nome : string
+  - email : string
+  - data_nascimento : Date
+  - peso_kg : number
+  - altura_cm : number
+  - objetivo : Objetivo
+  - nivel : Nivel
+  + validar() : Usuario
+  + calcularIMC() : number
+  + paraLinha() : object
+}
+class Exercicio {
+  - id : int
+  - nome : string
+  - grupo_muscular : GrupoMuscular
+  - equipamento : string
+  - descricao : string
+  + validar() : Exercicio
+  + paraLinha() : object
+}
+class Treino {
+  - id : int
+  - usuario_id : int
+  - nome : string
+  - dia_semana : string
+  - observacoes : string
+  - itens : TreinoExercicio[]
+  + validar() : Treino
+  + volumePlanejado() : number
+  + paraLinha() : object
+}
+class TreinoExercicio {
+  - id : int
+  - treino_id : int
+  - exercicio_id : int
+  - ordem : int
+  - series : int
+  - repeticoes_alvo : int
+  - carga_kg : number
+  - descanso_seg : int
+  + validarEm(v : Validador, rotulo : string)
+  + volumePlanejado() : number
+  + paraLinha(treinoId : int) : object
+}
+class Sessao {
+  - id : int
+  - treino_id : int
+  - data : Date
+  - duracao_min : int
+  - rpe_sessao : number
+  - observacoes : string
+  - series : SerieRealizada[]
+  + validar() : Sessao
+  + volumeTotal() : number
+  + paraLinha() : object
+}
+class SerieRealizada {
+  - id : int
+  - sessao_id : int
+  - exercicio_id : int
+  - numero_serie : int
+  - repeticoes : int
+  - carga_kg : number
+  - rpe : number
+  + validarEm(v : Validador, rotulo : string)
+  + estimar1RM() : number
+  + volume() : number
+  + {static} epley(carga, reps) : number
+}
+enum Objetivo {
+  hipertrofia
+  forca
+  resistencia
+  emagrecimento
+}
+enum GrupoMuscular {
+  peito
+  costas
+  ombros
+  biceps
+  triceps
+  quadriceps
+  posterior
+  gluteos
+  panturrilha
+  abdomen
+}
+enum Nivel {
+  iniciante
+  intermediario
+  avancado
+}
+Usuario "1" *- - "0..*" Treino : possui >
+Treino "1" *- - "1..*" TreinoExercicio : itens >
+TreinoExercicio "0..*" -right-> "1" Exercicio : prescreve >
+Treino "1" *- - "0..*" Sessao : executado em >
+Sessao "1" *- - "1..*" SerieRealizada : series >
+SerieRealizada "0..*" -left-> "1" Exercicio : refere-se >
+Usuario ..> Objetivo
+Usuario ..> Nivel
+Exercicio ..> GrupoMuscular
+hide empty methods
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 07:22:07 BRT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.13.0.3+1-1-24.04.1-Ubuntu
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

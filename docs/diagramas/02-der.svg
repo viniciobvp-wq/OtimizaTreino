@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="868px" preserveAspectRatio="none" style="width:570px;height:868px;" version="1.1" viewBox="0 0 570 868" width="570px" zoomAndPan="magnify"><defs/><g><!--MD5=[0e9ce6df5b8205fa3c94ed60aa73539a]
+class usuario--><rect fill="#FFFFFF" height="177.3281" id="usuario" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="239" x="31" y="8"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="47" x="127" y="25.0669">usuario</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="32" x2="269" y1="33.1328" y2="33.1328"/><ellipse cx="42" cy="44.1328" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="50" y="49.1997">id : INT «PK»</text><line style="stroke: #CF561D; stroke-width: 1.0;" x1="32" x2="269" y1="56.2656" y2="56.2656"/><ellipse cx="42" cy="67.2656" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="145" x="50" y="72.3325">nome : VARCHAR(100)</text><ellipse cx="42" cy="82.3984" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="214" x="50" y="87.4653">email : VARCHAR(150) «UNIQUE»</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="157" x="50" y="102.5981">data_nascimento : DATE</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="50" y="117.731">peso_kg : DECIMAL(5,2)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="163" x="50" y="132.8638">altura_cm : DECIMAL(5,2)</text><ellipse cx="42" cy="142.9297" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="101" x="50" y="147.9966">objetivo : ENUM</text><ellipse cx="42" cy="158.0625" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="50" y="163.1294">nivel : ENUM</text><ellipse cx="42" cy="173.1953" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="50" y="178.2622">criado_em : TIMESTAMP</text><!--MD5=[799113713678482fafff44cfbe58c178]
+class exercicio--><rect fill="#FFFFFF" height="116.7969" id="exercicio" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="241" x="302" y="269.5"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="56" x="394.5" y="286.5669">exercicio</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="303" x2="542" y1="294.6328" y2="294.6328"/><ellipse cx="313" cy="305.6328" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="321" y="310.6997">id : INT «PK»</text><line style="stroke: #CF561D; stroke-width: 1.0;" x1="303" x2="542" y1="317.7656" y2="317.7656"/><ellipse cx="313" cy="328.7656" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="321" y="333.8325">nome : VARCHAR(100) «UNIQUE»</text><ellipse cx="313" cy="343.8984" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="321" y="348.9653">grupo_muscular : ENUM</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="185" x="321" y="364.0981">equipamento : VARCHAR(60)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="321" y="379.231">descricao : TEXT</text><!--MD5=[04fa0b4da7d1fe78093d40569ba2a962]
+class treino--><rect fill="#FFFFFF" height="131.9297" id="treino" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="203" x="49" y="262"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="132" y="279.0669">treino</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="50" x2="251" y1="287.1328" y2="287.1328"/><ellipse cx="60" cy="298.1328" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="68" y="303.1997">id : INT «PK»</text><line style="stroke: #CF561D; stroke-width: 1.0;" x1="50" x2="251" y1="310.2656" y2="310.2656"/><ellipse cx="60" cy="321.2656" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="132" x="68" y="326.3325">usuario_id : INT «FK»</text><ellipse cx="60" cy="336.3984" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="137" x="68" y="341.4653">nome : VARCHAR(80)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="178" x="68" y="356.5981">dia_semana : VARCHAR(20)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="123" x="68" y="371.731">observacoes : TEXT</text><ellipse cx="60" cy="381.7969" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="68" y="386.8638">criado_em : TIMESTAMP</text><!--MD5=[d4281b9854e7b3e2b1363c59f7e24048]
+class te--><rect fill="#FFFFFF" height="162.1953" id="te" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="191" x="238" y="471"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="283.5" y="488.0669">treino_exercicio</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="239" x2="428" y1="496.1328" y2="496.1328"/><ellipse cx="249" cy="507.1328" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="257" y="512.1997">id : INT «PK»</text><line style="stroke: #CF561D; stroke-width: 1.0;" x1="239" x2="428" y1="519.2656" y2="519.2656"/><ellipse cx="249" cy="530.2656" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="257" y="535.3325">treino_id : INT «FK»</text><ellipse cx="249" cy="545.3984" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="141" x="257" y="550.4653">exercicio_id : INT «FK»</text><ellipse cx="249" cy="560.5313" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="101" x="257" y="565.5981">ordem : TINYINT</text><ellipse cx="249" cy="575.6641" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="257" y="580.731">series : TINYINT</text><ellipse cx="249" cy="590.7969" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="159" x="257" y="595.8638">repeticoes_alvo : TINYINT</text><ellipse cx="249" cy="605.9297" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="157" x="257" y="610.9966">carga_kg : DECIMAL(6,2)</text><ellipse cx="249" cy="621.0625" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="166" x="257" y="626.1294">descanso_seg : SMALLINT</text><!--MD5=[4b6ac578754799454f3b27d415318be6]
+class sessao--><rect fill="#FFFFFF" height="131.9297" id="sessao" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="197" x="6" y="486"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="45" x="82" y="503.0669">sessao</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="7" x2="202" y1="511.1328" y2="511.1328"/><ellipse cx="17" cy="522.1328" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="25" y="527.1997">id : INT «PK»</text><line style="stroke: #CF561D; stroke-width: 1.0;" x1="7" x2="202" y1="534.2656" y2="534.2656"/><ellipse cx="17" cy="545.2656" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="25" y="550.3325">treino_id : INT «FK»</text><ellipse cx="17" cy="560.3984" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="75" x="25" y="565.4653">data : DATE</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="158" x="25" y="580.5981">duracao_min : SMALLINT</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="25" y="595.731">rpe_sessao : DECIMAL(3,1)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="123" x="25" y="610.8638">observacoes : TEXT</text><!--MD5=[79fb8bc4c4febe3a297022eae6d00ae0]
+class sr--><rect fill="#FFFFFF" height="147.0625" id="sr" rx="4" ry="4" style="stroke: #CF561D; stroke-width: 1.5;" width="182" x="211.5" y="710"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="254.5" y="727.0669">serie_realizada</text><line style="stroke: #CF561D; stroke-width: 1.5;" x1="212.5" x2="392.5" y1="735.1328" y2="735.1328"/><ellipse cx="222.5" cy="746.1328" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="230.5" y="751.1997">id : INT «PK»</text><line style="stroke: #CF561D; stroke-width: 1.0;" x1="212.5" x2="392.5" y1="758.2656" y2="758.2656"/><ellipse cx="222.5" cy="769.2656" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="230.5" y="774.3325">sessao_id : INT «FK»</text><ellipse cx="222.5" cy="784.3984" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="141" x="230.5" y="789.4653">exercicio_id : INT «FK»</text><ellipse cx="222.5" cy="799.5313" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="230.5" y="804.5981">numero_serie : TINYINT</text><ellipse cx="222.5" cy="814.6641" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="230.5" y="819.731">repeticoes : TINYINT</text><ellipse cx="222.5" cy="829.7969" fill="#000000" rx="3" ry="3" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="157" x="230.5" y="834.8638">carga_kg : DECIMAL(6,2)</text><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="230.5" y="849.9966">rpe : DECIMAL(3,1)</text><!--MD5=[9d3de096b3f85b15b1b07f9cd2ba5f97]
+link usuario to treino--><path d="M150.5,193.01 C150.5,193.01 150.5,253.86 150.5,253.86 " fill="none" id="usuario-treino" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="150.5" x2="156.5" y1="253.86" y2="261.86"/><line style="stroke: #344054; stroke-width: 1.0;" x1="150.5" x2="144.5" y1="253.86" y2="261.86"/><line style="stroke: #344054; stroke-width: 1.0;" x1="150.5" x2="150.5" y1="253.86" y2="261.86"/><ellipse cx="150.5" cy="247.86" fill="none" rx="4" ry="4" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="146.5" x2="154.5" y1="189.01" y2="189.01"/><line style="stroke: #344054; stroke-width: 1.0;" x1="146.5" x2="154.5" y1="192.01" y2="192.01"/><line style="stroke: #344054; stroke-width: 1.0;" x1="150.5" x2="150.5" y1="193.01" y2="185.01"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="41" x="151.5" y="228.0669">possui</text><!--MD5=[689546a9e30df2ef17cedd21ec4874d8]
+link treino to te--><path d="M245,402.3 C245,402.3 245,462.8 245,462.8 " fill="none" id="treino-te" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="245" x2="251" y1="462.8" y2="470.8"/><line style="stroke: #344054; stroke-width: 1.0;" x1="245" x2="239" y1="462.8" y2="470.8"/><line style="stroke: #344054; stroke-width: 1.0;" x1="245" x2="245" y1="462.8" y2="470.8"/><line style="stroke: #344054; stroke-width: 1.0;" x1="249" x2="241" y1="460.8" y2="460.8"/><line style="stroke: #344054; stroke-width: 1.0;" x1="241" x2="249" y1="398.3" y2="398.3"/><line style="stroke: #344054; stroke-width: 1.0;" x1="241" x2="249" y1="401.3" y2="401.3"/><line style="stroke: #344054; stroke-width: 1.0;" x1="245" x2="245" y1="402.3" y2="394.3"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="287.5" y="437.0669">prescreve</text><!--MD5=[1aaae694513c59d2604d82f11ed69a0f]
+link exercicio to te--><path d="M365.5,394.56 C365.5,394.56 365.5,462.61 365.5,462.61 " fill="none" id="exercicio-te" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="365.5" x2="371.5" y1="462.61" y2="470.61"/><line style="stroke: #344054; stroke-width: 1.0;" x1="365.5" x2="359.5" y1="462.61" y2="470.61"/><line style="stroke: #344054; stroke-width: 1.0;" x1="365.5" x2="365.5" y1="462.61" y2="470.61"/><ellipse cx="365.5" cy="456.61" fill="none" rx="4" ry="4" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="361.5" x2="369.5" y1="390.56" y2="390.56"/><line style="stroke: #344054; stroke-width: 1.0;" x1="361.5" x2="369.5" y1="393.56" y2="393.56"/><line style="stroke: #344054; stroke-width: 1.0;" x1="365.5" x2="365.5" y1="394.56" y2="386.56"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="407.5" y="437.0669">compõe</text><!--MD5=[767bd59af0d971b47b82ecdbe4379d11]
+link treino to sessao--><path d="M126,402.3 C126,402.3 126,477.87 126,477.87 " fill="none" id="treino-sessao" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="126" x2="132" y1="477.87" y2="485.87"/><line style="stroke: #344054; stroke-width: 1.0;" x1="126" x2="120" y1="477.87" y2="485.87"/><line style="stroke: #344054; stroke-width: 1.0;" x1="126" x2="126" y1="477.87" y2="485.87"/><ellipse cx="126" cy="471.87" fill="none" rx="4" ry="4" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="122" x2="130" y1="398.3" y2="398.3"/><line style="stroke: #344054; stroke-width: 1.0;" x1="122" x2="130" y1="401.3" y2="401.3"/><line style="stroke: #344054; stroke-width: 1.0;" x1="126" x2="126" y1="402.3" y2="394.3"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="92" x="122.5" y="437.0669">executado em</text><!--MD5=[773b147ee664ead47ebd017ba75b3d34]
+link sessao to sr--><path d="M211.25,552 C211.25,552 224.75,552 224.75,552 C224.75,552 224.75,701.93 224.75,701.93 " fill="none" id="sessao-sr" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="224.75" x2="230.75" y1="701.93" y2="709.93"/><line style="stroke: #344054; stroke-width: 1.0;" x1="224.75" x2="218.75" y1="701.93" y2="709.93"/><line style="stroke: #344054; stroke-width: 1.0;" x1="224.75" x2="224.75" y1="701.93" y2="709.93"/><line style="stroke: #344054; stroke-width: 1.0;" x1="228.75" x2="220.75" y1="699.93" y2="699.93"/><line style="stroke: #344054; stroke-width: 1.0;" x1="207.25" x2="207.25" y1="556" y2="548"/><line style="stroke: #344054; stroke-width: 1.0;" x1="210.25" x2="210.25" y1="556" y2="548"/><line style="stroke: #344054; stroke-width: 1.0;" x1="211.25" x2="203.25" y1="552" y2="552"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="266.5" y="676.0669">registra</text><!--MD5=[5605de1787c31b7768d83099cad641fd]
+link exercicio to sr--><path d="M486,394.68 C486,394.68 486,784 486,784 C486,784 401.71,784 401.71,784 " fill="none" id="exercicio-sr" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="401.71" x2="393.71" y1="784" y2="790"/><line style="stroke: #344054; stroke-width: 1.0;" x1="401.71" x2="393.71" y1="784" y2="778"/><line style="stroke: #344054; stroke-width: 1.0;" x1="401.71" x2="393.71" y1="784" y2="784"/><ellipse cx="407.71" cy="784" fill="none" rx="4" ry="4" style="stroke: #344054; stroke-width: 1.0;"/><line style="stroke: #344054; stroke-width: 1.0;" x1="482" x2="490" y1="390.68" y2="390.68"/><line style="stroke: #344054; stroke-width: 1.0;" x1="482" x2="490" y1="393.68" y2="393.68"/><line style="stroke: #344054; stroke-width: 1.0;" x1="486" x2="486" y1="394.68" y2="386.68"/><text fill="#000000" font-family="DejaVu Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="500.5" y="556.5669">refere-se</text><!--MD5=[e7046a9f50c4ef0539f118bb524b2478]
+@startuml
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam roundCorner 8
+skinparam ArrowColor #344054
+skinparam BorderColor #344054
+skinparam ActorBorderColor #344054
+skinparam ActorBackgroundColor #FFF4EC
+skinparam UsecaseBackgroundColor #FFF4EC
+skinparam UsecaseBorderColor #CF561D
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassHeaderBackgroundColor #FFE7D9
+skinparam ClassBorderColor #CF561D
+skinparam EntityBackgroundColor #FFFFFF
+skinparam ActivityBackgroundColor #FFF4EC
+skinparam ActivityBorderColor #CF561D
+skinparam ActivityDiamondBackgroundColor #FFFFFF
+skinparam ParticipantBackgroundColor #FFF4EC
+skinparam ParticipantBorderColor #CF561D
+skinparam DatabaseBackgroundColor #E8F0FB
+skinparam SequenceLifeLineBorderColor #98A2B3
+skinparam SequenceGroupBackgroundColor #F2F4F7
+skinparam NoteBackgroundColor #FEF9C3
+skinparam NoteBorderColor #CA8A04
+skinparam PackageBorderColor #98A2B3
+skinparam RectangleBorderColor #98A2B3
+hide circle
+skinparam linetype ortho
+entity "usuario" as usuario {
+  * id : INT <<PK>>
+  - -
+  * nome : VARCHAR(100)
+  * email : VARCHAR(150) <<UNIQUE>>
+  data_nascimento : DATE
+  peso_kg : DECIMAL(5,2)
+  altura_cm : DECIMAL(5,2)
+  * objetivo : ENUM
+  * nivel : ENUM
+  * criado_em : TIMESTAMP
+}
+entity "exercicio" as exercicio {
+  * id : INT <<PK>>
+  - -
+  * nome : VARCHAR(100) <<UNIQUE>>
+  * grupo_muscular : ENUM
+  equipamento : VARCHAR(60)
+  descricao : TEXT
+}
+entity "treino" as treino {
+  * id : INT <<PK>>
+  - -
+  * usuario_id : INT <<FK>>
+  * nome : VARCHAR(80)
+  dia_semana : VARCHAR(20)
+  observacoes : TEXT
+  * criado_em : TIMESTAMP
+}
+entity "treino_exercicio" as te {
+  * id : INT <<PK>>
+  - -
+  * treino_id : INT <<FK>>
+  * exercicio_id : INT <<FK>>
+  * ordem : TINYINT
+  * series : TINYINT
+  * repeticoes_alvo : TINYINT
+  * carga_kg : DECIMAL(6,2)
+  * descanso_seg : SMALLINT
+}
+entity "sessao" as sessao {
+  * id : INT <<PK>>
+  - -
+  * treino_id : INT <<FK>>
+  * data : DATE
+  duracao_min : SMALLINT
+  rpe_sessao : DECIMAL(3,1)
+  observacoes : TEXT
+}
+entity "serie_realizada" as sr {
+  * id : INT <<PK>>
+  - -
+  * sessao_id : INT <<FK>>
+  * exercicio_id : INT <<FK>>
+  * numero_serie : TINYINT
+  * repeticoes : TINYINT
+  * carga_kg : DECIMAL(6,2)
+  rpe : DECIMAL(3,1)
+}
+usuario ||- -o{ treino : possui
+treino ||- -|{ te : prescreve
+exercicio ||- -o{ te : compõe
+treino ||- -o{ sessao : executado em
+sessao ||- -|{ sr : registra
+exercicio ||- -o{ sr : refere-se
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 07:22:07 BRT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.13.0.3+1-1-24.04.1-Ubuntu
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

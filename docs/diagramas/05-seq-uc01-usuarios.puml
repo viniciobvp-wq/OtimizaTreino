@@ -1,0 +1,44 @@
+@startuml
+!include _seq.iuml
+title UC01 - Gerenciar Usuários
+P -> F : Abre "Usuários"
+F -> A : GET /api/usuarios
+A -> R : listar()
+R -> DB : SELECT * FROM usuario
+DB --> R : linhas
+R --> A : lista
+A --> F : 200 [usuários]
+F --> P : Exibe tabela
+== Cadastrar / editar ==
+P -> F : Preenche formulário e clica Salvar
+F -> A : POST /api/usuarios (ou PUT /api/usuarios/:id)
+A -> R : criar(dados) / atualizar(id, dados)
+R -> M : new Usuario(dados).validar()
+alt dados inválidos
+  M --> R : ValidationError
+  R --> A : erro
+  A --> F : 400 {erro, detalhes}
+  F --> P : Mostra mensagens de validação
+else e-mail já cadastrado
+  R -> DB : INSERT INTO usuario ...
+  DB --> R : ER_DUP_ENTRY
+  A --> F : 409 Conflito
+  F --> P : Avisa que o e-mail já existe
+else sucesso
+  M --> R : usuário válido
+  R -> DB : INSERT / UPDATE usuario
+  DB --> R : ok
+  R --> A : usuário salvo
+  A --> F : 201 / 200 usuário
+  F --> P : Confirma e atualiza a lista
+end
+== Excluir ==
+P -> F : Clica Excluir e confirma
+F -> A : DELETE /api/usuarios/:id
+A -> R : remover(id)
+R -> DB : DELETE FROM usuario WHERE id = ?
+note right of DB : ON DELETE CASCADE remove\ntreinos, sessões e séries
+DB --> R : affectedRows
+A --> F : 204 No Content
+F --> P : Remove da lista
+@enduml

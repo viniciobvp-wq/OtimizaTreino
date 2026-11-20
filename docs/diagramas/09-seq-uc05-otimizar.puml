@@ -1,0 +1,46 @@
+@startuml
+!include _estilo.iuml
+autonumber
+hide footbox
+skinparam maxMessageSize 140
+skinparam ParticipantPadding 4
+actor Praticante as P
+participant "Front-end\n(React)" as F
+participant "API\n(Express)" as A
+participant "OtimizadorTreino" as O
+participant "TreinoRepositorio" as R
+database "MySQL" as DB
+title UC05 - Otimizar Treino
+P -> F : Abre o painel "Otimização"
+F -> A : GET /api/usuarios/:id/otimizacao
+A -> O : analisarUsuario(id)
+O -> DB : SELECT usuario
+alt usuário inexistente
+  O --> A : NotFoundError
+  A --> F : 404
+else encontrado
+  O -> DB : SELECT itens das fichas (JOIN treino, exercicio)
+  O -> DB : SELECT séries realizadas (JOIN sessao, exercicio)
+  O -> DB : SELECT sessões ordenadas por data
+  O -> O : analisar(): sugerirCarga() por item
+  O -> O : volume semanal por grupo x faixa do nível
+  O -> O : 1RM (Epley), fadiga e alertas
+  O --> A : análise
+  A --> F : 200 {resumo, alertas, progressao, volume, recordes}
+  F --> P : Exibe indicadores, sugestões e alertas
+end
+opt Praticante aceita os ajustes
+  P -> F : "Aplicar N ajuste(s) na ficha"
+  F -> A : POST /api/treinos/:id/aplicar-sugestoes {ajustes[]}
+  A -> R : aplicarCargas(id, ajustes)
+  R -> DB : BEGIN
+  loop cada ajuste
+    R -> DB : UPDATE treino_exercicio SET carga_kg = ?\nWHERE id = ? AND treino_id = ?
+  end
+  R -> DB : COMMIT
+  A --> F : 200 treino atualizado
+  F -> A : GET /api/usuarios/:id/otimizacao
+  A --> F : nova análise
+  F --> P : Painel atualizado
+end
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+!include _estilo.iuml
+left to right direction
+actor "Praticante" as P
+rectangle "OtimizaTreino" {
+  usecase "UC01\nGerenciar Usuários" as UC01
+  usecase "UC02\nGerenciar Exercícios" as UC02
+  usecase "UC03\nGerenciar Treinos" as UC03
+  usecase "UC04\nRegistrar Sessão\nde Treino" as UC04
+  usecase "UC05\nOtimizar Treino" as UC05
+  usecase "Selecionar\npraticante ativo" as SEL
+  usecase "Aplicar sugestões\nna ficha" as APL
+}
+P --> UC01
+P --> UC02
+P --> UC03
+P --> UC04
+P --> UC05
+UC03 ..> SEL : <<include>>
+UC04 ..> SEL : <<include>>
+UC05 ..> SEL : <<include>>
+UC05 <.. APL : <<extend>>
+@enduml

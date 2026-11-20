@@ -1,0 +1,109 @@
+@startuml
+!include _estilo.iuml
+skinparam classAttributeIconSize 0
+hide circle
+class Usuario {
+  - id : int
+  - nome : string
+  - email : string
+  - data_nascimento : Date
+  - peso_kg : number
+  - altura_cm : number
+  - objetivo : Objetivo
+  - nivel : Nivel
+  + validar() : Usuario
+  + calcularIMC() : number
+  + paraLinha() : object
+}
+class Exercicio {
+  - id : int
+  - nome : string
+  - grupo_muscular : GrupoMuscular
+  - equipamento : string
+  - descricao : string
+  + validar() : Exercicio
+  + paraLinha() : object
+}
+class Treino {
+  - id : int
+  - usuario_id : int
+  - nome : string
+  - dia_semana : string
+  - observacoes : string
+  - itens : TreinoExercicio[]
+  + validar() : Treino
+  + volumePlanejado() : number
+  + paraLinha() : object
+}
+class TreinoExercicio {
+  - id : int
+  - treino_id : int
+  - exercicio_id : int
+  - ordem : int
+  - series : int
+  - repeticoes_alvo : int
+  - carga_kg : number
+  - descanso_seg : int
+  + validarEm(v : Validador, rotulo : string)
+  + volumePlanejado() : number
+  + paraLinha(treinoId : int) : object
+}
+class Sessao {
+  - id : int
+  - treino_id : int
+  - data : Date
+  - duracao_min : int
+  - rpe_sessao : number
+  - observacoes : string
+  - series : SerieRealizada[]
+  + validar() : Sessao
+  + volumeTotal() : number
+  + paraLinha() : object
+}
+class SerieRealizada {
+  - id : int
+  - sessao_id : int
+  - exercicio_id : int
+  - numero_serie : int
+  - repeticoes : int
+  - carga_kg : number
+  - rpe : number
+  + validarEm(v : Validador, rotulo : string)
+  + estimar1RM() : number
+  + volume() : number
+  + {static} epley(carga, reps) : number
+}
+enum Objetivo {
+  hipertrofia
+  forca
+  resistencia
+  emagrecimento
+}
+enum GrupoMuscular {
+  peito
+  costas
+  ombros
+  biceps
+  triceps
+  quadriceps
+  posterior
+  gluteos
+  panturrilha
+  abdomen
+}
+enum Nivel {
+  iniciante
+  intermediario
+  avancado
+}
+Usuario "1" *-- "0..*" Treino : possui >
+Treino "1" *-- "1..*" TreinoExercicio : itens >
+TreinoExercicio "0..*" -right-> "1" Exercicio : prescreve >
+Treino "1" *-- "0..*" Sessao : executado em >
+Sessao "1" *-- "1..*" SerieRealizada : series >
+SerieRealizada "0..*" -left-> "1" Exercicio : refere-se >
+Usuario ..> Objetivo
+Usuario ..> Nivel
+Exercicio ..> GrupoMuscular
+hide empty methods
+@enduml

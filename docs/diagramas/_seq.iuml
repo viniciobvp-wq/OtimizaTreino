@@ -1,0 +1,11 @@
+!include _estilo.iuml
+autonumber
+hide footbox
+skinparam maxMessageSize 140
+skinparam ParticipantPadding 4
+actor Praticante as P
+participant "Front-end\n(React)" as F
+participant "API\n(Express)" as A
+participant "Repositório" as R
+participant "Modelo\n(entidade)" as M
+database "MySQL" as DB

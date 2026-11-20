@@ -1,0 +1,39 @@
+@startuml
+!include _seq.iuml
+title UC02 - Gerenciar Exercícios
+P -> F : Abre "Exercícios" e escolhe um grupo
+F -> A : GET /api/exercicios?grupo_muscular=costas
+A -> R : listar({grupo_muscular})
+R -> DB : SELECT * FROM exercicio WHERE grupo_muscular = ?
+DB --> R : linhas
+A --> F : 200 [exercícios]
+F --> P : Exibe catálogo filtrado
+== Cadastrar / editar ==
+P -> F : Informa nome, grupo, equipamento
+F -> A : POST /api/exercicios (ou PUT /:id)
+A -> R : criar(dados) / atualizar(id, dados)
+R -> M : new Exercicio(dados).validar()
+alt inválido
+  A --> F : 400 {erro, detalhes}
+  F --> P : Mostra erros
+else válido
+  R -> DB : INSERT / UPDATE exercicio
+  DB --> R : ok
+  A --> F : 201 / 200 exercício
+  F --> P : Atualiza a lista
+end
+== Excluir ==
+P -> F : Clica Excluir e confirma
+F -> A : DELETE /api/exercicios/:id
+A -> R : remover(id)
+R -> DB : DELETE FROM exercicio WHERE id = ?
+alt exercício usado em treino ou sessão
+  DB --> R : ER_ROW_IS_REFERENCED (FK RESTRICT)
+  A --> F : 409 "Registro em uso"
+  F --> P : Informa que não pode excluir
+else não utilizado
+  DB --> R : ok
+  A --> F : 204
+  F --> P : Remove da lista
+end
+@enduml
